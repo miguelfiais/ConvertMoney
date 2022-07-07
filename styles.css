@@ -62,9 +62,6 @@ select {
     font-size: 14px;
     line-height: 18px;
     color: #777777;
-    
-    appearance: none;
-
 }
 input {
     display: block;
