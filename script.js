@@ -3,6 +3,7 @@ const select = document.getElementById("select-convertFor")
 
 const dollarPrice = 5
 const euroPrice = 5.43
+const bitcoinPrice = 115637.73
 
 const convertValue = () => {
 
@@ -29,10 +30,14 @@ const convertValue = () => {
             currency: 'EUR'
         }).format(result));
     }
+    if(select.value==="Bitcoin"){
+        const result = (input / bitcoinPrice)
+        convertFor.innerHTML = result
+    }
     }
 
-
 const changeConvert = () =>{
+
     const changeMoeda = document.getElementById("change-moeda")
     const changeImg = document.getElementById("img-for")
     const textValue = document.getElementById("convert-for")
@@ -46,6 +51,10 @@ const changeConvert = () =>{
         changeMoeda.innerHTML = "Dolar Americano"
         changeImg.src = "./img/estados-unidos (1) 1.png"
         
+    }
+    if(select.value==="Bitcoin"){
+        changeMoeda.innerHTML = "Bitcoin"
+        changeImg.src = "./img/bitcoin.png"
     }
     convertValue()
 }
