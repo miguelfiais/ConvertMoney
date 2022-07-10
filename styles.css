@@ -4,45 +4,39 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     background: #E5E5E5;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
 .wrapper {
     width: 375px;
     background-color: #F4F4F4;
-    margin: 0 auto;
-    margin-top: 5%;
-
 }
-
 main {
     padding: 23px;
-   
 }
-
 header {
     background: #1B83E2;
     height: 66px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
 h1 {
     font-weight: 400;
     font-size: 24px;
     line-height: 18px;
     color: #F4F4F4;
-    text-align: center;
-    padding: 24px 0;
 }
-
 .text-select{
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
     color: #777777;
 }
-
 select {
     display: block;
     margin-top: 6px;
@@ -98,8 +92,17 @@ button:active{
 section{
     border: 1px solid #1B83E2;
     border-radius: 4px;
-    text-align: center;
-    padding: 12px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+.currency{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
 }
 .moeda{
     font-weight: 400;
@@ -112,9 +115,5 @@ section{
     font-size: 20px;
     line-height: 18px;
     color: #1B83E2;
-}
-#arrow{
-    margin-top: 15px;
-    margin-bottom: 13px;
 }
 
